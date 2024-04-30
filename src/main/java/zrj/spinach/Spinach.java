@@ -2,6 +2,10 @@ package zrj.spinach;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +14,8 @@ public class Spinach implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("spinach");
+	public static final Item SPINACH = new Item(new Item.Settings());
+	public static final Item SPINACH_BUNDLE = new Item(new Item.Settings());
 
 	@Override
 	public void onInitialize() {
@@ -18,6 +24,8 @@ public class Spinach implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		Registry.register(Registries.ITEM,new Identifier("spinach","spinach"), SPINACH);
+		Registry.register(Registries.ITEM,new Identifier("spinach_bundle","spinach bundle"), SPINACH_BUNDLE);
 	}
 
 
