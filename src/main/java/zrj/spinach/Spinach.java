@@ -28,5 +28,4 @@ public class Spinach implements ModInitializer {
 		Registry.register(Registries.ITEM,new Identifier("spinach_bundle","spinach bundle"), SPINACH_BUNDLE);
 	}
 
-
 }
