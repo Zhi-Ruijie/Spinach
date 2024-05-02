@@ -22,7 +22,7 @@ public class Spinach implements ModInitializer {
 	public static final Item SPINACH_BUNDLE = new Item(new Item.Settings());
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
 			.icon(() -> new ItemStack(SPINACH))
-			.displayName(Text.translatable("itemGroup.spinach.test_group"))
+			.displayName(Text.translatable("Spinach"))
 			.entries((context,entries) -> {
 				entries.add(SPINACH);
 				entries.add(SPINACH_BUNDLE);
