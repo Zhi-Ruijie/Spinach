@@ -2,9 +2,13 @@ package zrj.spinach;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +20,14 @@ public class Spinach implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("spinach");
 	public static final Item SPINACH = new Item(new Item.Settings());
 	public static final Item SPINACH_BUNDLE = new Item(new Item.Settings());
+	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
+			.icon(() -> new ItemStack(SPINACH))
+			.displayName(Text.translatable("itemGroup.spinach.test_group"))
+			.entries((context,entries) -> {
+				entries.add(SPINACH);
+				entries.add(SPINACH_BUNDLE);
+			})
+			.build();
 
 	@Override
 	public void onInitialize() {
@@ -26,7 +38,7 @@ public class Spinach implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach"),SPINACH);
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
-
+		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","test_group"),ITEM_GROUP);
 	}
 
 }
