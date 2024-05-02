@@ -3,6 +3,7 @@ package zrj.spinach;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.client.item.TooltipType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -12,6 +13,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 public class Spinach implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -38,7 +41,10 @@ public class Spinach implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach"),SPINACH);
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
-		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","test_group"),ITEM_GROUP);
+		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","spinach"),ITEM_GROUP);
 	}
 
+    public void appendToolTip(ItemStack itemStack, Item.TooltipContext context, List<Text> tooltip, TooltipType tooltipType){
+        tooltip.add(Text.translatable("4 pieces of Spinach can craft a spinach bundle"));
+    }
 }
