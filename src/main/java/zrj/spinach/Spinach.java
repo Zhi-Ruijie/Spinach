@@ -24,8 +24,9 @@ public class Spinach implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-		Registry.register(Registries.ITEM,new Identifier("spinach","spinach"), SPINACH);
-		Registry.register(Registries.ITEM,new Identifier("spinach_bundle","spinach bundle"), SPINACH_BUNDLE);
+		Registry.register(Registries.ITEM, new Identifier("spinach","spinach"),SPINACH);
+		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
+
 	}
 
 }
