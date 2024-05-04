@@ -5,7 +5,9 @@
     "SS "
   ],
   "key": {
-    "S": "spinach:spinach"
+    "S": {
+      "tag": "spinach:spinach"
+    }
   },
   "result": {
     "item": "spinach:spinach_bundle"

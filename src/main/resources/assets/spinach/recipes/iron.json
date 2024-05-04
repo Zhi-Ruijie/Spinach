@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "spinach:spinach_bundle",
+  "result": "minecraft:iron",
+  "experience": "5",
+  "cookingtime": "40"
+}
