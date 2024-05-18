@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "spinach:spinach_bundle"
+  },
+  "result": {
+    "id": "minecraft:iron_nugget"
+  }
+}
