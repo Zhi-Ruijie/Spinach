@@ -6,11 +6,11 @@
   ],
   "key": {
     "S": {
-      "item":  "spinach:spinach"
+      "id":  "spinach:spinach"
     }
   },
   "result": {
-    "item": "spinach:spinach_bundle",
+    "id": "spinach:spinach_bundle",
     "count": 1
   }
 }
