@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "SS ",
-    "SS "
+    "SS ",
+    "   "
   ],
   "key": {
     "S": {
-      "item": "spinach:spinach"
+      "tag": "spinach:spinach"
     }
   },
   "result": {
