@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SS ",
-    "SS ",
-    "   "
+    "SS",
+    "SS"
   ],
   "key": {
     "S": {
-      "item": "spinach:spinach"
+      "item":  "spinach:spinach"
     }
   },
   "result": {
-    "item": "spinach:spinach_bundle"
+    "item": "spinach:spinach_bundle",
+    "count": 1
   }
 }
