@@ -21,12 +21,14 @@ public class Spinach implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("spinach");
 	public static final Item SPINACH = new Item(new Item.Settings());
 	public static final Item SPINACH_BUNDLE = new Item(new Item.Settings());
+	public static final Item SPINACH_SEEDS = new Item(new Item.Settings());
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
 			.icon(() -> new ItemStack(SPINACH))
 			.displayName(Text.translatable("itemGroup.spinach.spinach"))
 			.entries((context,entries) -> {
 				entries.add(SPINACH);
 				entries.add(SPINACH_BUNDLE);
+				entries.add(SPINACH_SEEDS);
 			})
 			.build();
     public static final Block SPINACH_BLOCK = new Block(Block.Settings.create().strength(4.0f));
@@ -40,6 +42,7 @@ public class Spinach implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach"),SPINACH);
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
+		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_seeds"),SPINACH_SEEDS);
 		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","spinach"),ITEM_GROUP);
 		Registry.register(Registries.BLOCK, new Identifier("spinach", "spinach_block"), SPINACH_BLOCK);
 	}
