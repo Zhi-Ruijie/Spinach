@@ -23,7 +23,7 @@ public class Spinach implements ModInitializer {
 	public static final Item SPINACH_BUNDLE = new Item(new Item.Settings());
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
 			.icon(() -> new ItemStack(SPINACH))
-			.displayName(Text.translatable("Spinach"))
+			.displayName(Text.translatable("itemGroup.spinach.spinach"))
 			.entries((context,entries) -> {
 				entries.add(SPINACH);
 				entries.add(SPINACH_BUNDLE);
@@ -41,6 +41,7 @@ public class Spinach implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach"),SPINACH);
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
 		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","spinach"),ITEM_GROUP);
+		Registry.register(Registries.BLOCK, new Identifier("spinach", "spinach_block"), SPINACH_BLOCK);
 	}
 
 }
