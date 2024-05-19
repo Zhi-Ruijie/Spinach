@@ -3,6 +3,7 @@ package zrj.spinach;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -31,6 +32,7 @@ public class Spinach implements ModInitializer {
 				entries.add(SPINACH_BUNDLE);
 			})
 			.build();
+    public static final Block SPINACH_BLOCK = new Block(Block.Settings.create().strength(4.0f));
 
 	@Override
 	public void onInitialize() {
