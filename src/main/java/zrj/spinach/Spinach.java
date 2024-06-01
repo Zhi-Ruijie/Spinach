@@ -31,7 +31,7 @@ public class Spinach implements ModInitializer {
 				entries.add(SPINACH_SEEDS);
 			})
 			.build();
-    public static final Block SPINACH_BLOCK = new Block(Block.Settings.create().strength(4.0f));
+    public static final Block SPINACH_CROPS = new Block(Block.Settings.create().strength(4.0f));
 
 	@Override
 	public void onInitialize() {
@@ -44,7 +44,7 @@ public class Spinach implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_bundle"),SPINACH_BUNDLE);
 		Registry.register(Registries.ITEM, new Identifier("spinach","spinach_seeds"),SPINACH_SEEDS);
 		Registry.register(Registries.ITEM_GROUP,new Identifier("spinach","spinach"),ITEM_GROUP);
-		Registry.register(Registries.BLOCK, new Identifier("spinach", "spinach_block"), SPINACH_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier("spinach", "spinach_block"), SPINACH_CROPS);
 	}
 
 }
