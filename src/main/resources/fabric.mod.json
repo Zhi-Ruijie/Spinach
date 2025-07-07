@@ -3,15 +3,16 @@
 	"id": "spinach",
 	"version": "${version}",
 	"name": "Spinach",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod used to make iron",
 	"authors": [
-		"Me!"
+		"Zarijaden"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Zhi-Ruijie/Spinach/tree/master",
+		"sources": "https://github.com/Zhi-Ruijie/Spinach/tree/master",
+		"issues": "https://github.com/Zhi-Ruijie/Spinach/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT License",
 	"icon": "assets/spinach/icon.png",
 	"environment": "*",
 	"entrypoints": {
