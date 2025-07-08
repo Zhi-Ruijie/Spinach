@@ -1,5 +1,6 @@
 package name.spinach;
 
+import name.spinach.block.ModBlocks;
 import name.spinach.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,5 +23,6 @@ public class Spinach implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
