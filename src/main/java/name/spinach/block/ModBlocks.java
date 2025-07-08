@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block SPINACH_BLOCK = registerBlocks("spinach_block",new Block(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block SPINACH_BLOCK = registerBlocks("spinach",new Block(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     private static Block registerBlocks(String name,Block block){
         return Registry.register(Registries.BLOCK,new Identifier(Spinach.MOD_ID,name),block);
     }
