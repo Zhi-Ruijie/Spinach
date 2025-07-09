@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "spinach:block/spinach_stage1"
+    "crop": "spinach:block/spinach_crop_stage5"
   }
 }

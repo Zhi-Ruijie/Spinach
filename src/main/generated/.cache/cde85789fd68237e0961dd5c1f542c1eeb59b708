@@ -1,0 +1,12 @@
+// 1.20.1	2025-07-09T13:25:18.7500417	Spinach/Model Definitions
+f389a475efd789a40ef2fe62b28cef9204e94f73 assets\spinach\blockstates\spinach_crop.json
+aad50e72894bb422a8a83391b6c982e3b94a4531 assets\spinach\models\item\spinach.json
+34ecc1655a1d8303554c06c65a51a33cc30a3b73 assets\spinach\models\block\spinach_crop_stage1.json
+156e908057bc18ab171301494c8cba6831669ba8 assets\spinach\models\block\spinach_crop_stage4.json
+9ddb47fbc7c8245f0c6bfe6a019f7a26430f2651 assets\spinach\models\block\spinach_crop_stage6.json
+f1c8c83599fe5628b2c5c7eed001001ad1e74e71 assets\minecraft\models\item\air.json
+a2a406d4cb47581ad76048fbd6e22e583622af2b assets\spinach\models\block\spinach_crop_stage5.json
+42945e48eebc5317013cdd5f1c338901a1733d7f assets\spinach\models\block\spinach_crop_stage2.json
+6fa86757c0a549b7aae0f2a5ff7e0ded6986527f assets\spinach\models\block\spinach_crop_stage0.json
+c039d7b34d1ad8e151aa5213e4ec3009f46ef3fa assets\spinach\models\block\spinach_crop_stage7.json
+c979c5a6478fda3bb4754734acb158de1fdb1fe4 assets\spinach\models\block\spinach_crop_stage3.json
