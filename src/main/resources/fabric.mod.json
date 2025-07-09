@@ -19,6 +19,10 @@
 		"main": [
 			"name.spinach.Spinach"
 		],
+
+		"client": [
+			"name.spinach.SpinachClient"
+		],
 		"fabric-datagen": [
 			"name.spinach.SpinachDataGenerator"
 		]
