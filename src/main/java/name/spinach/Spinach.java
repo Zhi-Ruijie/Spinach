@@ -2,6 +2,7 @@ package name.spinach;
 
 import name.spinach.block.ModBlocks;
 import name.spinach.item.ModItems;
+import name.spinach.loot.ModLootModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,6 @@ public class Spinach implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootModifiers.register();
 	}
 }
